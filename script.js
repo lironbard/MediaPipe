@@ -46,7 +46,8 @@ function onResults(results) {
     console.log(vectorsMultiple);
     // let vectorsMultipleRes = vectorsMultiple[0] + vectorsMultiple[1] + vectorsMultiple[2]; //-5
     // console.log(vectorsMultipleRes);
-    let vectorRoots = (Math.sqrt(vectorBAU[0]) + Math.sqrt(vectorBAU[1]) + Math.sqrt(vectorBAU[2])) * (Math.sqrt(vectorBCV[0]) + Math.sqrt(vectorBCV[1]) + Math.sqrt(vectorBCV[2]));
+    let vectorRoots =
+      Math.sqrt(Math.pow(vectorBAU[0], 2) + Math.pow(vectorBAU[1], 2) + Math.pow(vectorBAU[2], 0)) * Math.sqrt(Math.pow(vectorBCV[0], 2) + Math.pow(vectorBCV[1], 2) + Math.pow(vectorBCV[2], 2));
     console.log(Math.sqrt(vectorBAU[0]));
     console.log(vectorRoots);
 
