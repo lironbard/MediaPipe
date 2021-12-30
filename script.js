@@ -9,26 +9,6 @@ function zColor(data) {
 }
 
 function onResults(results) {
-  // const printResult = () => {
-    // let dotA = results.poseLandmarks[23]; // Left_hip
-    // let dotB = results.poseLandmarks[25]; // Left_knee
-    // let dotC = results.poseLandmarks[27]; // Left_ankle
-    // console.log(dotA);
-    // console.log(dotB);
-    // console.log(dotC);
-    // let dotBx = results.poseLandmarks[25].x;
-    // let dotBy = results.poseLandmarks[25].y;
-    // let dotBz = results.poseLandmarks[12].z;
-    // let dotBBz = results.poseLandmarks[11].z;
-    // console.log(`The Z of your right Knee is ${dotBBz}`);
-    // console.log(dotBx);
-    // console.log(`The X of your left Knee is ${dotBx}`);
-    // console.log(dotBy);
-    // console.log(`The Y of your left Knee is ${dotBy}`);
-    // console.log(dotBz);
-    // console.log(`The Z of your left Knee is ${dotBz}`);
-  // };
-
   function calculation() {
     let dotAx = results.poseLandmarks[23].x; // Left_hip x
     let dotAy = results.poseLandmarks[23].y; // Left_hip y
@@ -54,9 +34,6 @@ function onResults(results) {
 
     let degreeAngel = raDangle * (180 / Math.PI);
     console.log(`The angle of your left knee is: ${degreeAngel} !!!`);
-    //--Magnitude (length of a vector) --\
-    //|a| = sqwrt((x)^2+(y)^2)
-    //|b| = sqwrt((x)^2+(y)^2)
   }
 
   calculation();
@@ -69,7 +46,7 @@ function onResults(results) {
 
   canvasCtx.save();
   canvasCtx.clearRect(0, 0, canvasElement.width, canvasElement.height);
-  canvasCtx.drawImage(results.segmentationMask, 0, 0, canvasElement.width, canvasElement.height);
+  // canvasCtx.drawImage(results.segmentationMask, 0, 0, canvasElement.width, canvasElement.height);
 
   // Only overwrite existing pixels.
   canvasCtx.globalCompositeOperation = "source-in";
@@ -112,3 +89,27 @@ const camera = new Camera(videoElement, {
   height: 720,
 });
 camera.start();
+
+// const printResult = () => {
+// let dotA = results.poseLandmarks[23]; // Left_hip
+// let dotB = results.poseLandmarks[25]; // Left_knee
+// let dotC = results.poseLandmarks[27]; // Left_ankle
+// console.log(dotA);
+// console.log(dotB);
+// console.log(dotC);
+// let dotBx = results.poseLandmarks[25].x;
+// let dotBy = results.poseLandmarks[25].y;
+// let dotBz = results.poseLandmarks[12].z;
+// let dotBBz = results.poseLandmarks[11].z;
+// console.log(`The Z of your right Knee is ${dotBBz}`);
+// console.log(dotBx);
+// console.log(`The X of your left Knee is ${dotBx}`);
+// console.log(dotBy);
+// console.log(`The Y of your left Knee is ${dotBy}`);
+// console.log(dotBz);
+// console.log(`The Z of your left Knee is ${dotBz}`);
+// };
+
+//--Magnitude (length of a vector) --\
+//|a| = sqwrt((x)^2+(y)^2)
+//|b| = sqwrt((x)^2+(y)^2)
