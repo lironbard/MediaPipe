@@ -111,7 +111,7 @@ camera.start();
 // console.log(`The Y of your left Knee is ${dotBy}`);
 // console.log(dotBz);
 // console.log(`The Z of your left Knee is ${dotBz}`);
-// };
+/// };
 
 //--Magnitude (length of a vector) --\
 //|a| = sqwrt((x)^2+(y)^2)
