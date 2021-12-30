@@ -12,9 +12,12 @@
   border: 3px solid springgreen;
 }
 .output_canvas {
-  border: 3px solid #00FF00;
+  border: 3px solid #00ff00;
 }
 .output_canvas {
-  border: 3px solid #FF0000;
+  border: 3px solid #ff0000;
 }
 
+#degreeAngle {
+  border: 3px solid skyblue;
+}
