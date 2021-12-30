@@ -34,7 +34,7 @@ function onResults(results) {
 
     let degreeAngel = raDangle * (180 / Math.PI);
     console.log(`The angle of your left knee is: ${degreeAngel} !!!`);
-    document.getElementById("degreeAngle").innerHTML = degreeAngel;
+    document.getElementById("degreeAngle").innerHTML = `Your Left Knee Angle is: ${degreeAngel}`;
   }
 
   calculation();
